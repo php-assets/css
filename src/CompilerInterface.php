@@ -4,5 +4,11 @@ namespace PhpAssets\Css;
 
 interface CompilerInterface
 {
-    public function compile(string $css);
+    /**
+     * Compile raw CSS or extension string.
+     *
+     * @param string $raw
+     * @return string
+     */
+    public function compile($raw);
 }
